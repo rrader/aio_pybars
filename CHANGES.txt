@@ -1,0 +1,12 @@
+aio_pybars Changelog
+======================
+
+
+Version 0.1.0
+-----------------
+
+Released on April 19, 2016.
+
+  - First version.
+  - Recursive loader of pybars3 templates.
+  - Renderer and response helper for aiohttp.
