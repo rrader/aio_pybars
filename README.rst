@@ -4,10 +4,19 @@ aio_pybars
 Quick Start
 ------------------
 
+0. Install::
+
+    pip install aio_pybars
+
+OR via setup.py::
+
+    python setup.py install
+
 1. Configure your app::
 
     from aio_pybars import FSTemplateLoader
     loop.run_until_complete(aio_pybars.setup(app,
+                                             templates_dir=config['TEMPLATES_DIR'],
                                              Loader=FSTemplateLoader))
 
 2. Use templates in the view::
@@ -71,6 +80,7 @@ would call the `asset` callable with "favicon.ico" argument and put the results 
 and pass it as Loader argument to the setup::
 
     loop.run_until_complete(aio_pybars.setup(app,
+                                             templates_dir=config['TEMPLATES_DIR'],
                                              Loader=AppFSTemplateLoader))
 
 Recursive rendering of templates
